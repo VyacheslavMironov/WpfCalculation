@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Калькулятор_Брукса" Height="446" Width="434">
+    <Grid x:Name="Калькулятор_Брукса" Height="436" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="inputField" 
+                 HorizontalAlignment="Left" 
+                 Margin="60,35,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="318" 
+                 Height="40"
+                 Foreground="#777" 
+                 Background="#FFD8D8D8" FontSize="24"
+        />
+        <!-- <TextBlock x:Name="input_field" 
+                   HorizontalAlignment="Left" 
+                   Margin="60,35,0,0" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top" 
+                   Width="318" 
+                   Height="51" 
+                   Foreground="#777" 
+                   Background="#FFD8D8D8" 
+                   FontWeight="Bold" 
+                   FontSize="36"
+        >
+            0
+        </TextBlock> -->
+        <Button x:Name="_7" Content="7" HorizontalAlignment="Left" Margin="60,113,0,0" VerticalAlignment="Top" Width="54" Height="38" Click="Button_Click"/>
+        <Button x:Name="_8" Content="8" HorizontalAlignment="Left" Margin="145,113,0,0" VerticalAlignment="Top" Height="38" Width="54" Click="Button_Click"/>
+        <Button x:Name="_9" Content="9" HorizontalAlignment="Left" Margin="234,113,0,0" VerticalAlignment="Top" Height="38" Width="54" Click="Button_Click"/>
+        <Button x:Name="_4" Content="4" HorizontalAlignment="Left" Margin="60,179,0,0" VerticalAlignment="Top" Width="54" Height="38" Click="Button_Click"/>
+        <Button x:Name="_5" Content="5" HorizontalAlignment="Left" Margin="145,179,0,0" VerticalAlignment="Top" Height="38" Width="54" Click="Button_Click"/>
+        <Button x:Name="_6" Content="6" HorizontalAlignment="Left" Margin="234,179,0,0" VerticalAlignment="Top" Height="38" Width="54" Click="Button_Click"/>
+        <Button x:Name="_1" Content="1" HorizontalAlignment="Left" Margin="60,253,0,0" VerticalAlignment="Top" Width="54" Height="38" Click="Button_Click"/>
+        <Button x:Name="_2" Content="2" HorizontalAlignment="Left" Margin="145,253,0,0" VerticalAlignment="Top" Height="38" Width="54" Click="Button_Click"/>
+        <Button x:Name="_3" Content="3" HorizontalAlignment="Left" Margin="234,253,0,0" VerticalAlignment="Top" Height="38" Width="54" Click="Button_Click"/>
+        <Button x:Name="addition" Content="+" HorizontalAlignment="Left" Margin="324,113,0,0" VerticalAlignment="Top" Height="38" Width="54" Click="Button_Click"/>
+        <Button x:Name="subtraction" Content="-" HorizontalAlignment="Left" Margin="324,179,0,0" VerticalAlignment="Top" Height="38" Width="54" Click="Button_Click"/>
+        <Button x:Name="division" Content="*" HorizontalAlignment="Left" Margin="324,253,0,0" VerticalAlignment="Top" Height="38" Width="54" Click="Button_Click"/>
+        <Button x:Name="multiplication" Content="/" HorizontalAlignment="Left" Margin="324,322,0,0" VerticalAlignment="Top" Height="38" Width="54" Click="Button_Click"/>
+        <Button x:Name="C" Content="C" HorizontalAlignment="Left" Margin="60,322,0,0" VerticalAlignment="Top" Width="54" Height="38" Click="Clear"/>
+        <Button x:Name="_0" Content="0" HorizontalAlignment="Left" Margin="145,322,0,0" VerticalAlignment="Top" Height="38" Width="54" Click="Button_Click"/>
+        <Button x:Name="equals" Content="=" HorizontalAlignment="Left" Margin="234,322,0,0" Click="Equals" VerticalAlignment="Top" Height="38" Width="54"/>
+
+    </Grid>
+</Window>
